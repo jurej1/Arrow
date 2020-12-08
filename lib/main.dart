@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart' as fbcore;
 
 import 'package:provider/provider.dart';
+import 'package:testing_application_1/screens/about%20page/aboutPageScreen.dart';
 import 'package:testing_application_1/services/authentication.dart' as auth;
 import 'package:testing_application_1/services/database.dart';
 
@@ -98,6 +99,7 @@ class _CoreAppState extends State<CoreApp> {
           SettingsScreen.routeName: (ctx) => SettingsScreen(),
           ProfileScreen.routeName: (ctx) => ProfileScreen(),
           SearchScreen.routeName: (ctx) => SearchScreen(),
+          AboutPage.routeName: (ctx) => AboutPage(),
         },
       ),
     );

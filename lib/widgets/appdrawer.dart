@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:testing_application_1/screens/about%20page/aboutPageScreen.dart';
 
 import 'package:testing_application_1/screens/settings%20screen/setting_screen.dart';
 import '../screens/search screen/search_screen.dart';
@@ -37,6 +38,18 @@ class CustomDrawer extends StatelessWidget {
               color: Theme.of(context).primaryColor,
             ),
             title: const Text('Settings'),
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.info,
+              color: Theme.of(context).primaryColor,
+            ),
+            title: const Text('About'),
+            onTap: () {
+              Navigator.of(context).pushReplacementNamed(
+                AboutPage.routeName,
+              );
+            },
           ),
           ListTile(
             leading: Icon(
